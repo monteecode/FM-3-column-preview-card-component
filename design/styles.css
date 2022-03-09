@@ -4,17 +4,17 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.item:nth-child(1) {
+.card:nth-child(1) {
   background-color: hsl(31, 77%, 52%);
   color: white;
 }
 
-.item:nth-child(2) {
+.card:nth-child(2) {
   background-color: hsl(184, 100%, 22%);
   color: white;
 }
 
-.item:nth-child(3) {
+.card:nth-child(3) {
   background-color: hsl(179, 100%, 13%);
   color: white;
 }
