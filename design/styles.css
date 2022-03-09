@@ -1,3 +1,28 @@
+section {
+  display: grid;
+  max-width: 1000px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.item:nth-child(1) {
+  background-color: hsl(31, 77%, 52%);
+  color: white;
+}
+
+.item:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+}
+
+.item:nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+  color: white;
+}
+
+button {
+  background-color: white;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -5,3 +30,9 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* @media screen and (min-width: 799px) {
+  section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+} */
