@@ -5,13 +5,8 @@
 
 section {
   display: grid;
-  max-width: 1200px;
+  max-width: 1440px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-h3 {
-  justify-content: left;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .card {
@@ -25,9 +20,17 @@ h3 {
   color: white;
 }
 
+.card:nth-child(1) button {
+  color: hsl(31, 77%, 52%);
+}
+
 .card:nth-child(2) {
   background-color: hsl(184, 100%, 22%);
   color: white;
+}
+
+.card:nth-child(2) button {
+  color: hsl(184, 100%, 22%);
 }
 
 .card:nth-child(3) {
@@ -35,10 +38,22 @@ h3 {
   color: white;
 }
 
+.card:nth-child(3) button {
+  color: hsl(179, 100%, 13%);
+}
+
+.card h3 {
+  font-family: "Big Shoulders Display", cursive;
+  justify-content: left;
+  font-size: 2em;
+}
+
 button {
   background-color: white;
-  width: 50%;
-  padding: 6px;
+  width: 30%;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
   /* align-self: flex-end; */
   justify-content: left;
 }
