@@ -1,11 +1,11 @@
-/* main {
-  width: 1200px;
+main {
+  width: 1440px;
   margin: 0 auto;
-} */
+}
 
 section {
   display: grid;
-  max-width: 1440px;
+  max-width: 900px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -48,12 +48,19 @@ section {
   font-size: 2em;
 }
 
+.card p {
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 2;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
 button {
-  background-color: white;
-  width: 30%;
-  padding: 10px;
+  background-color: hsl(0, 0%, 95%);
+  width: 29%;
+  padding: 11px;
   border: none;
-  border-radius: 30px;
+  border-radius: 20px;
+  cursor: pointer;
   /* align-self: flex-end; */
   justify-content: left;
 }
