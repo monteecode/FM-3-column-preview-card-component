@@ -1,11 +1,13 @@
-/* main {
-  width: 1440px;
-  margin: 0 auto;
-} */
+main {
+  display: grid;
+  justify-content: center;
+  height: 100vh;
+}
 
 section {
   display: grid;
   max-width: 900px;
+  height: 400px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -56,7 +58,7 @@ section {
 
 button {
   background-color: hsl(0, 0%, 95%);
-  width: 29%;
+  width: 100px;
   padding: 11px;
   border: none;
   border-radius: 20px;
@@ -66,6 +68,10 @@ button {
 }
 
 .attribution {
+  /* position: fixed;
+  bottom: 0;
+  width: 100%; */
+  padding: 30px;
   font-size: 11px;
   text-align: center;
 }
@@ -73,8 +79,8 @@ button {
   color: hsl(228, 45%, 44%);
 }
 
-/* @media screen and (min-width: 799px) {
+@media screen and (max-width: 799px) {
   section {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 100%;
   }
-} */
+}
