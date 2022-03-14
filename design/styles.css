@@ -8,7 +8,7 @@ section {
   display: grid;
   align-self: center;
   max-width: 950px;
-  height: 400px;
+  height: 550px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -21,6 +21,8 @@ section {
 .card:nth-child(1) {
   background-color: hsl(31, 77%, 52%);
   color: white;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 .card:nth-child(1) button {
@@ -47,6 +49,8 @@ section {
 .card:nth-child(3) {
   background-color: hsl(179, 100%, 13%);
   color: white;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .card:nth-child(3) button {
@@ -61,12 +65,14 @@ section {
   font-family: "Big Shoulders Display", cursive;
   justify-content: left;
   font-size: 2em;
+  margin-bottom: 30px;
 }
 
 .card p {
   font-family: "Lexend Deca", sans-serif;
   line-height: 2;
   color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 30px;
 }
 
 button {
@@ -84,6 +90,10 @@ button:hover {
   border: white 1px solid;
 }
 
+img {
+  margin: 30px 0px;
+}
+
 .attribution {
   align-self: end;
   padding: 30px;
@@ -95,7 +105,22 @@ button:hover {
 }
 
 @media screen and (max-width: 799px) {
+  main {
+    min-height: max-content;
+  }
   section {
-    grid-template-columns: 100%;
+    grid-template-columns: 90%;
+    margin: 0px 50px;
+  }
+
+  .card:nth-child(1) {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .card:nth-child(3) {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 8px;
   }
 }
