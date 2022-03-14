@@ -6,7 +6,8 @@ main {
 
 section {
   display: grid;
-  max-width: 900px;
+  align-self: center;
+  max-width: 950px;
   height: 400px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
@@ -63,14 +64,11 @@ button {
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  /* align-self: flex-end; */
-  justify-content: left;
+  margin-top: auto;
 }
 
 .attribution {
-  /* position: fixed;
-  bottom: 0;
-  width: 100%; */
+  align-self: end;
   padding: 30px;
   font-size: 11px;
   text-align: center;
